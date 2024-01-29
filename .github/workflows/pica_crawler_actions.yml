@@ -30,7 +30,7 @@ jobs:
           # 订阅的关键词,会下载x天范围内上传的漫画    为空则关闭关键词订阅 用,分隔
           SUBSCRIBE_KEYWORD: 黒本君
           # 订阅的x天范围     git actions运行时填小一点,免得漫画过多邮箱推送不了,本地运行时随便填
-          SUBSCRIBE_DAYS: 1
+          SUBSCRIBE_DAYS: 100
         run: |
           python main.py
           git add downloaded.txt
