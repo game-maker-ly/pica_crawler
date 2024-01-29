@@ -28,7 +28,7 @@ jobs:
           # CATEGORIES_RULE 过滤规则    INCLUDE: 包含任意一个分区就下载  EXCLUDE: 包含任意一个分区就不下载
           CATEGORIES_RULE: EXCLUDE
           # 订阅的关键词,会下载x天范围内上传的漫画    为空则关闭关键词订阅 用,分隔
-          SUBSCRIBE_KEYWORD: 黒本君
+          SUBSCRIBE_KEYWORD: 開大車
           # 订阅的x天范围     git actions运行时填小一点,免得漫画过多邮箱推送不了,本地运行时随便填
           SUBSCRIBE_DAYS: 2
         run: |
