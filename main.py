@@ -66,7 +66,8 @@ p.login()
 p.punch_in()
 
 # 排行榜/收藏夹的漫画
-comics = p.leaderboard()
+# comics = p.leaderboard()
+comics = []
 
 # # 关键词订阅的漫画
 keywords = os.environ["SUBSCRIBE_KEYWORD"].split(',')
@@ -75,7 +76,9 @@ for keyword in keywords:
     print('关键词%s : 订阅了%d本漫画' % (keyword, len(subscribe_comics)))
     comics += subscribe_comics
 
-favourites = p.my_favourite()
+# 收藏先不下
+# favourites = p.my_favourite()
+favourites = []
 print('id | 本子 | 画师 | 分区')
 
 for comic in favourites + comics:
